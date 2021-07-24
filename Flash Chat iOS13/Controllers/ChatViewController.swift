@@ -32,6 +32,7 @@ class ChatViewController: UIViewController {
         tableView.register(UINib(nibName: K.cellNibName, bundle: nil), forCellReuseIdentifier: K.cellIdentifier)
         loadMessages()
     }
+    
     func loadMessages() {
        messages = []
         db.collection(K.FStore.collectionName)
